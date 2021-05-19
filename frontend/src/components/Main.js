@@ -1,4 +1,6 @@
 import styled from "styled-components/macro";
+import Board from "./Board";
+import PropTypes from "prop-types";
 
 Main.propTypes = {
     todos: PropTypes.arrayOf(PropTypes.shape({

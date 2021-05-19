@@ -6,6 +6,7 @@ import useTodos from "./hooks/useTodos";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Board from "./components/Board";
 import Navigation from "./components/Navigation";
+import Main from "./components/Main";
 
 export default function App() {
 
