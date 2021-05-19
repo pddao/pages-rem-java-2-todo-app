@@ -13,10 +13,7 @@ Main.propTypes = {
 
 }
 
-export default function Main({ todos, onAdvance, onRemove }) {
-  const openTodos = todos.filter(todo => todo.status === 'OPEN')
-  const inProgressTodos = todos.filter(todo => todo.status === 'IN_PROGRESS')
-  const doneTodos = todos.filter(todo => todo.status === 'DONE')
+export default function Main({onAdvance, onRemove, openTodos, inProgressTodos, doneTodos}) {
 
   return (
     <Wrapper>

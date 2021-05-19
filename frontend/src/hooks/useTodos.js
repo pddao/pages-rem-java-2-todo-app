@@ -41,7 +41,10 @@ export default function useTodos() {
             .catch(error => console.error(error))
     }, [])
 
-    return {todos, advanceTodo, addNewTodo, removeTodo}
+    const openTodos = todos.filter(todo => todo.status === 'OPEN')
+    const inProgressTodos = todos.filter(todo => todo.status === 'IN_PROGRESS')
+    const doneTodos = todos.filter(todo => todo.status === 'DONE')
 
+    return {advanceTodo, addNewTodo, removeTodo, openTodos, inProgressTodos, doneTodos}
 
 }
