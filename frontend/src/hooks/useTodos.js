@@ -47,5 +47,4 @@ export default function useTodos() {
 
     return {advanceTodo, addNewTodo, removeTodo, openTodos, inProgressTodos, doneTodos}
 
-
 }
