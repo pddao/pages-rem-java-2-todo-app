@@ -1,7 +1,7 @@
 import Page from './components/Page'
 import Header from './components/Header'
 import AddATodo from './components/AddATodo'
-import Main from './components/Main'
+import Boards from './components/Boards'
 import useTodos from "./hooks/useTodos";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Board from "./components/Board";
@@ -10,7 +10,6 @@ import Navigation from "./components/Navigation";
 export default function App() {
 
     const {advanceTodo, addNewTodo, removeTodo, openTodos, inProgressTodos, doneTodos} = useTodos();
-
     return (
         <Router>
             <Page>

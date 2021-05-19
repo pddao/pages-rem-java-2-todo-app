@@ -17,3 +17,5 @@ const Wrapper = styled.nav`
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 `
+
+ 
